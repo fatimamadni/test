@@ -2,7 +2,7 @@ package authz
 
 default allow = false
 
-allow if {
+allow {
   user := input.user
   resource := input.resource
   user_tags := data.users[user].tags
